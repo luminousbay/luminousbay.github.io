@@ -16,11 +16,11 @@ AT+CIFSR
 
 1. Open PuTTY
 
-2. Select “Telnet” as the connection type
+2. Select “_Telnet_” as the connection type
 
 3. Type the IP address and the port number as 80
 
-4. Click on “Open”
+4. Click on “_Open_”
 
 
 ![putty.png](https://lh4.googleusercontent.com/HEMhubcG37oxzOfjWRJpW0kq-iKHCrtoqbd5uei23ywbipFlrLGPGieHtYQkcSa8RJw=w2400)
@@ -70,7 +70,28 @@ Now to send text message from Realterm to PuTTY follow these steps:
 Open PuTTY and set connection type as _Raw_
 
 
+![p.png](https://lh5.googleusercontent.com/djbByFfw88T8utgbB2Zbmq7M5K7MzJ9gQD8nE-jHTd7G0gUe4ZzUjzULLfQcG1yKKpk=w2400)
 
+
+Always after opening Realterm configure your ESP8266 there is no harm in doing this
+
+You may get this message in return that ‘_Link is built_‘
+
+Now type this command on Realterm terminal
+
+```html
+AT+CIPSEND=0,5
+```
+
+And after this, type your desired message but it should be under the prescribed bytes which you've already mentioned in the above command.
+
+And immediately you will notice your message on PuTTY terminal and this time don’t use:
+
+```html
+AT+CIPCLOSE=0
+```
+
+which we have done when we are viewing messages on browser else this will close the PuTTY terminal.
 
 
 

@@ -141,7 +141,7 @@ In this file, comment out the ## input_gspcav1 plugin by inserting “# ” at t
 
 \#\ PLUGINS += input_gspcav1.so
 
-You can search the code by clicking Ctrl+W and can make the changes
+You can search the code by clicking _Ctrl+W_ and can make the changes
 
 Finally, run make to compile the program
 
@@ -189,10 +189,11 @@ Press it and enable Wormhole. The link will contain your device ID
 ### Access your camera video stream via Dataplicity Wormhole
 
 To see our video stream embedded using HTML we’ll go to the address below (remember to replace <YOUR_ID> with your device Wormhole URL from your Dataplicity account).
+{: .text-justify}
 
 https://\<YOUR_ID>\.dataplicity.io/stream_simple.html
 
-Now let us make an android app using MIT App Inventor
+_Now let us make an android app using MIT App Inventor_
 
 Necessary block diagram for this is shown below
 

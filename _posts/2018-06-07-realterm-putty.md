@@ -3,7 +3,8 @@ layout: post
 title: ESP8266-01 as Server and Client using PuTTY and Realterm
 published: true
 ---
-_Hello guys.. in my previous posts I have mentioned some of the AT commands to configure your ESP and establish a communication between server and client locally. In this post I will mention how to do the same using PuTTY and Realterm._{: .text-justify}
+_Hello guys.. in my previous posts I have mentioned some of the AT commands to configure your ESP and establish a communication between server and client locally. In this post I will mention how to do the same using PuTTY and Realterm._
+{: .text-justify}
 
 
 ![nodemcu_1.png](https://lh4.googleusercontent.com/mtl9KqBkxLfKY9vIwqUpacBza77i0lQ6lS2QIXIDpFDWPPGmVFxg748rFXOYVA0Vxcw=w2400)

@@ -4,7 +4,8 @@ title: How to upload code to ESP8266-01 through Arduino board
 published: true
 ---
 
-_It's a very simple task to accomplish this and is very convenient also. So here I'm writing how to simply upload your well written code to ESP8266-01 module using any Arduino board._{: .text-justify}
+_It's a very simple task to accomplish this and is very convenient also. So here I'm writing how to simply upload your well written code to ESP8266-01 module using any Arduino board._
+{: .text-justify}
 
 ![_config.yml]({{ site.baseurl }}/images/arduino.jpg)
 <!--more-->

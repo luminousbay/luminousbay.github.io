@@ -197,7 +197,7 @@ Now let us make an android app using MIT App Inventor
 Necessary block diagram for this is shown below
 
 
-![rpi_server.png](https://lh6.googleusercontent.com/jSd8Q4ovoZUh0SQiJ1iq8zBwlvYZCC7Ch13lYLOWHHxNcHeNoRj08v6kMBhIKIjbzao=w2400)
+![rpi_app.png](https://lh6.googleusercontent.com/jSd8Q4ovoZUh0SQiJ1iq8zBwlvYZCC7Ch13lYLOWHHxNcHeNoRj08v6kMBhIKIjbzao=w2400)
 
 
 Now build this app choose an icon and install in your android phone and stream your Raspberry pi Camera with one-click.

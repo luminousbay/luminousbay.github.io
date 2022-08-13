@@ -12,6 +12,10 @@
 /**************/
 /* BASE RULES */
 /**************/
+.text-justify {
+  text-align: justify;
+}
+
 .tablelines table, .tablelines td, .tablelines th {
         border: 1px solid black;
         }

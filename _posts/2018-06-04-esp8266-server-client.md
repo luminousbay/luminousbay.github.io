@@ -5,6 +5,7 @@ published: true
 ---
 
 _The ESP8266-01 is a Wi-Fi module that allows any microcontroller system access to a Wi-Fi network. This module is a self-contained SOC (System On a Chip) that doesn’t necessarily need a microcontroller to manipulate inputs and outputs as you would normally do with an Arduino. ESP8266-01 basically having two GPIO pins. We can simply program the ESP8266 to not only have access to a Wi-Fi network, but to act as a microcontroller as well. This makes the ESP8266 very versatile. In this tutorial I am going to communicate with ESP8266-01 module._
+{: .text-justify}
 
 
 ![esp.jpg](https://lh4.googleusercontent.com/zVT5Jr5yWMWeaseowqlNNKKyJDu3tTSJuRXkr1Zq5t5HitT1rG9lQOVc2C_AV-w9neE=w2400)

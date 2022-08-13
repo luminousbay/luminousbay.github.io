@@ -9,7 +9,7 @@ _Here I have used Raspberry pi in headless mode using VNC. Prior to proceeding w
 ![rpi.jpg](https://lh4.googleusercontent.com/S75UVSuC51CxpK7z5jWCTiJXbSZpn8x2IE38sXVxEV3Qsu4a6pHIlRr4tfI7t06p230=w2400)
 <!--more-->
 
-```
+```javascript
 sudo apt-get update
 sudo apt-get upgrade
 ```

@@ -139,7 +139,7 @@ nano Makefile
 
 In this file, comment out the ## input_gspcav1 plugin by inserting “# ” at the beginning of the line, like so
 
-# PLUGINS += input_gspcav1.so
+\#\ PLUGINS += input_gspcav1.so
 
 You can search the code by clicking Ctrl+W and can make the changes
 

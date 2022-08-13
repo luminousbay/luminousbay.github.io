@@ -41,7 +41,7 @@ Then enable Camera by clicking Yes option
 
 ![rpi_config3.png](https://lh3.googleusercontent.com/6m21sz-Lo3gTgpw3GyZfDTuExCOW80EV3HvNOeP59VGSOouc6vUEkGdt4cPfNU85hvE=w2400)
 
-From the main menu exit raspi-config by pressing the right arrow twice to navigate to the “<Finish>” option and press enter to exit. You will be prompted to reboot your Raspberry Pi if you are enabling it for first time for changes to take effect – select Yes.
+From the main menu exit raspi-config by pressing the right arrow twice to navigate to the 'Finish' option and press enter to exit. You will be prompted to reboot your Raspberry Pi if you are enabling it for first time for changes to take effect – select Yes.
 {: .text-justify}
 
 ### Test the camera

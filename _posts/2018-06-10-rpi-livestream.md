@@ -190,7 +190,7 @@ Press it and enable Wormhole. The link will contain your device ID
 
 To see our video stream embedded using HTML we’ll go to the address below (remember to replace <YOUR_ID> with your device Wormhole URL from your Dataplicity account).
 
-https://<YOUR_ID>.dataplicity.io/stream_simple.html
+https://\<YOUR_ID>\.dataplicity.io/stream_simple.html
 
 Now let us make an android app using MIT App Inventor
 
@@ -203,11 +203,3 @@ Necessary block diagram for this is shown below
 Now build this app choose an icon and install in your android phone and stream your Raspberry pi Camera with one-click.
 
 Originally taken from  [docs.dataplicity.com](docs.dataplicity.com)
-
-
-
-
-
-
-
-

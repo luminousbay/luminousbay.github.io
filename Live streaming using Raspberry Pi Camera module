@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 _Here i have used Raspberry pi in headless mode using VNC. Prior to proceeding with the steps let us first make sure that the latest updates are installed on our Pi. To update our Pi we need to run the two commands below._
 {: .text-justify}

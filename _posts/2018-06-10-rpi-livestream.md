@@ -85,7 +85,7 @@ sudo modprobe bcm2835-v4l2
 Please keep in mind that the above command will persist on your Raspberry Pi until the system shuts down. After the system is re-booted you will have to type this command again.
 {: .text-justify}
 
-Upon successful execution of this command you should see ## Video0 device file inside /dev directory. To verify, run the command below.
+Upon successful execution of this command you should see **Video0** device file inside /dev directory. To verify, run the command below.
 {: .text-justify}
 
 ```shell
@@ -137,7 +137,7 @@ cd mjpg-streamer/
 nano Makefile
 ```
 
-In this file, comment out the ## input_gspcav1 plugin by inserting “# ” at the beginning of the line, like so
+In this file, comment out the **input_gspcav1** plugin by inserting “#” at the beginning of the line, like so
 
 ```python
 # PLUGINS += input_gspcav1.so

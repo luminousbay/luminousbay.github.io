@@ -1,8 +1,8 @@
 ---
 layout: post
 title: >-
-  Display measured data over local network following server/client relationship
-  using Arduino and Raspberry Pi
+  Visualise measured data over local network following server/client
+  relationship using Arduino and Raspberry Pi
 published: true
 ---
 Hello! Today i’ll show you how to measure DC voltage using Arduino and display the measured data on request from client over same network using some Python code and Raspberry Pi.
@@ -15,9 +15,9 @@ Voltage measurement is the simplest task that we can perform using Arduino. Ardu
 ![rpi1](https://lh3.googleusercontent.com/84C_lcmbQ3A5HFLaJGs3u-e1_Ian-9wAuyGID3AHXU0qOvC0dkGZRgr-W5s6NQiq-3o=w2400)
 <!--more-->
 
-
+ 
 ![Analog](https://lh6.googleusercontent.com/JjldPoC6rYozWSxKp99KufbQb_1gDZU5Hj0MIiv0r5MfUKUcnd-5q4HL3KpF3DF30gE=w2400)
-
+{: .image-center}
 
 A 10K ohm Potentiometer is used to regulate the output voltage. Connect the three wires from the potentiometer to your board. The first goes to ground from one of the outer pins of the potentiometer. The second goes to 5 volts from the other outer pin of the potentiometer. The third goes from the middle pin of the potentiometer to analog input 0. By turning the shaft of the potentiometer, you change the amount of resistance on either side of the wiper which is connected to the center pin of the potentiometer. This changes the voltage at the center pin. This voltage is the analog voltage that you’re reading as an input.
 {: .text-justify}

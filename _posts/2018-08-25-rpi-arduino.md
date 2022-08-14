@@ -40,7 +40,6 @@ Open the Serial Monitor from (Tools>>Serial Monitor), Set Baud rate to 9600, See
 
 
 ![volt_measure](https://lh3.googleusercontent.com/07SqOj_KCauTVCJRxQNDu32rKJ-UW4RnU0gVDoALjFbmmZNYhKGMxqCaFHwEBImiT-o=w2400)
-{: .image-center}
 
 
 But here in this tutorial we won’t convert analog values to corresponding voltages right now instead we do it when we read these values from the saved file in Raspberry pi and hence we must edit the above lines of code as follows:
@@ -63,7 +62,6 @@ The output at Serial Monitor is shown below:
 
 
 ![volt_measure](https://lh3.googleusercontent.com/hBI9LQ_hOFW01vYvH6_qfZnPFt_7m_OssGyWQFtwwVs4zqKQCN0afZXmS1NZgzTkGKM=w2400)
-{: .image-center}
 
 
 Now we connect Arduino to Raspberry Pi board through USB port in order to save the serial data within Raspberry Pi in truncated form. Here the serially incoming data is saved in truncated form in order to get access to the most recent measured value. It is saved in CSV format such that whenever newer reading arrives the older saved one gets replaced automatically. On the other hand RPi is programmed such that on client’s GET command it reads the data from the file and displays it on client’s terminal.
@@ -80,7 +78,6 @@ It generally means to list all the device connected to Raspberry Pi. Hence it wi
 
 
 ![device_list](https://lh5.googleusercontent.com/d1g96WKz5bbpyCSVPavpduBEFldzbl1y7XPyQzH3MrX8ydizGwxd9yDCJlwrVHhXC-8=w2400)
-{: .image-center}
 
 
 From this it becomes very difficult to identify the exact device ID for Arduino. So the trick is that we’ll save the list in a text file when Arduino is not connected and again we’ll save the list in another text file but this time when Arduino is connected and then we figure out which extra device has been added up.
@@ -110,7 +107,6 @@ This will list all the extra connected device and will surely contain the device
 
 
 ![device_list1](https://lh6.googleusercontent.com/cMSH2k8OMkO7UYCSUwq-YOf2dXdjjdTbQtW0ivHfWx3iPqAFPg3X9JelL1S0q0pJAOk=w2400)
-{: .image-center}
 
 
 A small python code is written for the same

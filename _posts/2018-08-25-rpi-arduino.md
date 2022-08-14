@@ -2,7 +2,7 @@
 layout: post
 title: >-
   Display measured data over local network following server/client relationship
-  using Arduino and Raspberry Pi
+  using Arduino and Raspberry Pi {: .text-justify}
 published: true
 ---
 Hello! Today i’ll show you how to measure DC voltage using Arduino and display the measured data on request from client over same network using some Python code and Raspberry Pi.

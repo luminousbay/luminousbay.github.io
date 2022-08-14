@@ -247,7 +247,7 @@ One more function which is added here is that the data which is received by clie
 {: .text-justify}
 
 
-![output2](https://drive.google.com/file/d/1y9vrXnM99Se1lsfE4531fqPuMqWWBIGy/view?usp=sharing)
+![output2](https://lh5.googleusercontent.com/ZcIOq9K9HEp70Di_pcDOBrBA3si2-ux3L68dWCqrZcOpACtBsQxHy-ElXxXZlNxIJFk=w2400)
 
 
 

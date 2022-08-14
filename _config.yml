@@ -21,7 +21,7 @@ footer-links:
   email: skg.unt@gmail.com
   facebook:
   flickr:
-  github: sumanesp
+  github: luminousbay
   instagram:
   linkedin: sumon-
   pinterest:
@@ -84,4 +84,4 @@ exclude:
   - README.md
   - CNAME
 
-theme: jekyll-theme-hacker
+theme: Architect

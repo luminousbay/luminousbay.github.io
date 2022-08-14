@@ -134,3 +134,122 @@ while True:
           print("Keyboard Interrupt")
           break
 ```
+
+In the above excerpt of code, analog value is converted into corresponding DC voltages and is rounded up-to 2 figure. The CSV file is saved in the location _/home/pi/Desktop_  and is opened with “a” so as to append data in that file. Time is also appended here as further customization in a temporary variable ‘_local_’. Data is saved in truncated format. This must be run from the terminal only as we require Thonny editor for running another piece of code. Now to create local server on Raspberry pi open python editor (Thonny) and run the following code.
+{: .text-justify}
+
+```python
+import socket
+import os
+host = ''
+port = 5560
+def catacomb(): #To read the truncated data from arduino
+     f = open('/home/pi/Desktop/data.csv', 'r')
+     storedValue = f.read(1024)
+     return storedValue
+def measure_temp():
+     temp = os.popen("vcgencmd measure_temp").readline()
+     return temp
+def setupServer():
+     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+     print("Socket created.")
+     try:
+          s.bind((host, port))
+     except socket.error as msg:
+          print(msg)
+     print("Socket bind complete.")
+     return s
+def setupConnection():
+     s.listen(1) #Allows one connection at a time
+     conn, address = s.accept()
+     print("Connected to: " + address[0] + ":" + str(address[1]))
+     return conn
+def dataTransfer(conn):
+     while True:
+          data = conn.recv(1024) #Receive the data
+          data = data.decode('utf-8')
+          dataMessage = data.split(' ', 1)
+          command = dataMessage[0]
+          if command == 'DATA': #This command will send the data from arduino
+               reply = catacomb()
+          elif command == 'TEMP': #To send the processor temperature
+               reply = measure_temp()
+          elif command == 'EXIT': #Only client will be exited
+               print("Client has left us.")
+               break
+          elif command == 'OFF': #Server and client will both get turn off
+               print("Server is shutting down.")
+               s.close() #Close the connection
+               break
+          else:
+               reply = 'Unknown Command'
+          conn.sendall(str.encode(reply)) #Send the reply back to client
+          print("Data has been sent!")
+     conn.close()
+s = setupServer()
+while True:
+     try:
+          conn = setupConnection()
+          dataTransfer(conn)
+     except:
+          break
+```
+
+
+Now after successfully running the above python code you’ll get the following result on terminal.
+
+
+![output](https://lh6.googleusercontent.com/vuAelqSkYoUv5f7RW4CU3U2739bzQ5qFKajGSpcTkyqnHf13RsS5oX-QbBEne3_1vIU=w2400)
+
+
+Here i have used Thonny editor that comes inbuilt in Raspbian Stretch. Here it is to be noted that all the above codes must be run inside Raspberry Pi. Next step is to work on client side. To do so open any python editor (pyCharm) in your PC and make sure that your PC is connected to the same network as your Raspberry Pi, simply it may be your mobile hotspot. Run the following code.
+{: .text-justify}
+
+
+```python
+import socket
+import csv
+ 
+host = '192.168.xxx.xxx' #Use your Raspberry Pi's IP Address
+port = 5560
+ 
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((host, port)) #Connect to the Server
+ 
+while True:
+    command = input("Enter your command:")
+    if command == 'EXIT':
+        s.send(str.encode(command))
+        break
+    elif command == 'OFF':
+        s.send(str.encode(command))
+        break
+    s.send(str.encode(command))
+    reply = s.recv(1024) #Receive from Server
+ 
+    print(reply.decode('utf-8'))
+    csv_file = open("E:\ voltage.txt", "a")
+    with open("E:\ voltage.txt", "a") as f:
+        writer = csv.writer(f, delimiter=" ")
+        writer.writerow(reply.decode('utf-8'))
+s.close()
+```
+
+
+The above lines of code is used to ask the server for the voltage that Arduino is reading on the other side. To read the voltage along with time the command ‘DATA’ is used and  command ‘TEMP’ is used to get your Pi’s temperature. To exit the client but keeping the server running ‘EXIT’ command is used and to turn off both the side ‘OFF’ command is used.
+{: .text-justify}
+
+
+![output1](https://lh4.googleusercontent.com/WUMvY8HRnNQavNEvtdAKwRjNxT82SWZnB4FC6Y3onkBkcjn8D25QXnROvHyi4FoiT64=w2400)
+
+
+One more function which is added here is that the data which is received by client side will get automatically saved in a file of text format located in E drive as voltage.txt. The extension of the file can be changed to CSV format also. You basically don’t need to manually create the file but it’ll auto create itself. To show the same a screenshot is added below.
+{: .text-justify}
+
+
+![output2](https://drive.google.com/file/d/1y9vrXnM99Se1lsfE4531fqPuMqWWBIGy/view?usp=sharing)
+
+
+
+
+

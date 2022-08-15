@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Live streaming using Raspberry Pi Camera module
 published: true
 ---

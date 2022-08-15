@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Program Arduino with LabVIEW
 published: true
 ---

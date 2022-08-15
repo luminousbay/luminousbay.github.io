@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: >-
   Visualise measured data over local network following server/client
   relationship between Arduino and Raspberry Pi

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: ESP8266-01 as Server and Client using PuTTY and Realterm
 published: true
 ---

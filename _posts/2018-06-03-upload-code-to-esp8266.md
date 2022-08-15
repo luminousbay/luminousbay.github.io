@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: How to upload code to ESP8266-01 through Arduino board
 published: true
 ---
